@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .search {
   font-family: ArminGrotesk, ArminGroteskBlack;
   display: block;
@@ -75,10 +79,91 @@
   padding-inline: 1rem;
   width: 232%;
 }
-.search .main__grid {
-  grid-template-rows: 4fr;
+
+.main {
+  display: block;
+  line-height: 1.5rem;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  width: 856%;
+}
+.main__text-top {
+  align-items: center;
+  display: flex;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.main__text-top__Library {
+  color: rgb(16, 40, 75);
+  display: block;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 3.3rem;
+}
+.main__sbutext-top {
+  color: rgb(6, 40, 75);
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-block: 1.5rem;
+  margin-inline: 1.5rem;
+}
+.main__library-new {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  display: grid;
   grid-auto-rows: 1fr;
-  -moz-column-gap: 0.75rem;
-       column-gap: 0.75rem;
-  row-gap: 1.5rem;
+  grid-template-columns: 16.3125rem;
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
+  row-gap: 2rem;
+}
+.main__library-new__grid {
+  color: rgb(56, 31, 209);
+  cursor: pointer;
+  font-weight: 500;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-inline: 1.5rem;
+}
+.main__library-new__grid__img-p {
+  aspect-ratio: auto 40/40;
+  width: 2.375rem;
+  height: 2.375rem;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  height: 2.5rem;
+  line-height: 1.5rem;
+  max-width: 5rem;
+  max-height: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow-y: clip;
+  overflow-x: clip;
+  width: 2.5rem;
+  vertical-align: middle;
+}
+.main__library-new__grid__tittle {
+  color: rgb(56, 31, 209);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.main__library-new__grid__tittle-sbu {
+  color: rgb(16, 40, 75);
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  margin-bottom: 0.5rem;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
